@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<!--Inserción de los metadatos-->
+
+<head>
+  <!--Estableces que símbolo o caracter de código representa a un caracter en lenguaje humano-->
+  <meta charset="UTF-8">
+  <!--Nos permite indicar cómo se verá un proyecto web en los dispositivos móviles-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Indica un color sugerido que los agentes de usuario deben usar para personalizar la
+       visualización de la página-->
+  <meta name="theme-color" content="#7952b3">
+
+  <!--Titulo de la Página en la Pestaña de Google-->
+  <title>Inicio - Modulo 1</title>
+
+  <!-- Hojas de Estilo en Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- Hoja de estilo personalizada -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+  </style>
+  
+  <!-- Iconos de Font Awesome (versión gratuita)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+  <!--Representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, 
+      así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes.-->
+  <header>
+    <!--Barra de navegación-->
+    <nav id="main" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <!--El Div sirve para crear secciones o agrupar contenidos. -->
+      <div class="container-fluid">
+        <!--El a href representa un hipervínculo-->
+        <a class="navbar-brand" href="#">
+          <h3>sal&salsa</h3>
+        </a>
+        <!--El Button  es el elemento crea botones marcadores-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <!--El Span sirve para aplicar estilo al texto o agrupar elementos en línea-->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!--El ul crea una lista no ordenada-->
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <!--El li especifica los ítems de la lista como una secuencia ordenada.-->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Representa el contenido principal del <body> de un documento o aplicación. -->
+  <main>
+    <!-- acá pongan su codigo de la actividad que seleccionen -->
+
+
+
+
+    <!--Footer-->
+
+    <footer class="text-center text-lg-start bg-dark text-muted">
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row align-items-center">
+            <div class="col-md-4  mx-auto mb-md-0 mb-4">
+              <img src="./img/logo@2x.png"
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="200"
+                height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200"
+                preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+            </div>
+            <div class="col-md-4  mx-auto mb-md-0 mb-4">
+              <div class="row align-items-center">
+                <div class="col-md-4  mx-auto mb-md-0 mb-4">
+                  <a href="" class="me-4 text-reset">
+                    MAPA DEL SITIO
+                  </a>
+                </div>
+                <div class="col-md-4  mx-auto mb-md-0 mb-4">
+                  <a href="" class="me-4 text-reset">
+                    CONTÁCTANOS
+                  </a>
+                </div>
+                <div class="col-md-4  mx-auto mb-md-0 mb-4">
+                  <a href="" class="me-4 text-reset">
+                    RESERVAS
+                  </a>
+                </div>
+
+              </div>
+              <div class="row align-items-center " style="text-align: center;">
+
+                <p>Restaurante Sal y Salsa Ltda.<br>
+                  Calle 19 #7-30, Bogotá<br>
+                  Calle 19 #7-30, Bogotá<br>
+                  reservas@salysalsa.com<br>
+                  31232525321</p>
+              </div>
+            </div>
+            <div class="col-md-4  mx-auto mb-md-0 mb-4" style="text-align: center;">
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.397892523755!2d-74.07284316474787!3d4.605767782672307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a1f30307cf%3A0xf863232d4608bc5b!2zQ2wuIDE5ICM3LTMwLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1631414099705!5m2!1ses!2sco"
+                frameborder="0" style="border:0"></iframe>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+      <div class="container p-4">
+
+        <div class="row align-items-center">
+          <div class="col-md-4  mx-auto mb-md-0 mb-4"> © 2021 Copyright: Colnodo JuvenTic</div>
+          <div class="col-md-4  mx-auto mb-md-0 mb-4">
+            <!-- Section: Links  -->
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </footer>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
