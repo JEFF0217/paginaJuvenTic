@@ -1,8 +1,15 @@
+body{
+  font-size: 1.2rem
+}
+#main{
+  background: rgba(0, 0, 0, 0.6) !important;
+}
 
+.logo-nav{
+  width: 80px;
+}
 
-
-
-.carousel-item::before{
+#carousel-item1::before,#carousel-item2::before,#carousel-item3::before{
   content:"";
   display: block;
   position: absolute;
@@ -53,11 +60,11 @@
   font-size: 2.5vw;
 }
 
-
-.container-img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.img-historia{
+  height: 150px
 }
 
-
+#empleados img, #testimonios img{
+  width: 150px;
+  height: 150px
+}

@@ -12,7 +12,7 @@
   <meta name="theme-color" content="#7952b3">
 
   <!--Titulo de la Página en la Pestaña de Google-->
-  <title>Inicio - Modulo 1</title>
+  <title>Inicio</title>
 
   <!-- Hojas de Estilo en Bootstrap core CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -38,8 +38,8 @@
       <!--El Div sirve para crear secciones o agrupar contenidos. -->
       <div class="container-fluid">
         <!--El a href representa un hipervínculo-->
-        <a class="navbar-brand" href="#">
-          <h3>sal&salsa</h3>
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo@2x.png" alt="" class="img-fluid logo-nav">
         </a>
         <!--El Button  es el elemento crea botones marcadores-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -51,20 +51,18 @@
           <!--El ul crea una lista no ordenada-->
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <!--El li especifica los ítems de la lista como una secuencia ordenada.-->
+
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contáctanos</a>
+              <a class="nav-link" href="contactanos.html">Contáctanos</a>
             </li>
           </ul>
         </div>
@@ -85,21 +83,21 @@
           aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div id="carousel-item1" class="carousel-item active">
           <img src="./img/foto1@2x.png" class="d-block w-100" alt="..." style="width:640px;height:360px">
-          <img class="logo" src="./img/logo@2x.png" alt="">
+          <img class="logo " src="./img/logo@2x.png" alt="">
           <div class="carousel-caption  d-md-block">
             <h5>Sabores que exaltan tus sentidos</h5>
           </div>
         </div>
-        <div class="carousel-item">
+        <div id="carousel-item2" class="carousel-item">
           <img src="./img/foto2@2x.png" class="d-block w-100" alt="..." style="width:640px;height:360px">
           <img class="logo" src="./img/logo@2x.png" alt="">
           <div class="carousel-caption  d-md-block">
             <h5>Sabores que exaltan tus sentidos</h5>
           </div>
         </div>
-        <div class="carousel-item">
+        <div id="carousel-item3" class="carousel-item">
           <img src="./img/foto3@2x.png" class="d-block w-100" alt="..." style="width:640px;height:360px">
           <img class="logo" src="./img/logo@2x.png" alt="">
           <div class="carousel-caption  d-md-block">
@@ -168,12 +166,12 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 text-center">
           <div class="row">
             <h1 class="fw-light text-center text-lg-start mt-4 mb-0"><br></h1>
             <h1 class="fw-light text-center text-lg-start mt-4 mb-0"><br></h1>
 
-            <div class="col-md-12 container-img">
+            <div class="col-md-12">
               <div class="d-block h-100 mb-4"></a>
                 <img class="img-fluid" src="./img/menu@2x.png" alt="" style="width:203px;height:284px">
               </div>
@@ -182,7 +180,7 @@
           </div>
           <div class="row">
             <div class="text-center">
-              <button type="button" class="btn btn-dark">Consultar el menu</button>
+              <a type="button" class="btn btn-dark" href="menu.html">Consultar el menu</a>
             </div>
 
           </div>
@@ -201,23 +199,23 @@
       <div class="row class align-items-end">
         <div class="col-3 text-center">
           <div class="d-block h-100 mb-4"></a>
-            <img class="img-fluid"  src="./img/icono1@2x.png" width="40%" alt="">
+            <img class="img-fluid" src="./img/icono1@2x.png" width="40%" alt="">
           </div>
 
         </div>
         <div class="col-3 text-center">
           <div class="d-block h-100 mb-4"></a>
-            <img class="img-fluid"  src="./img/icono2@2x.png" width="40%" alt="">
+            <img class="img-fluid" src="./img/icono2@2x.png" width="40%" alt="">
           </div>
         </div>
         <div class=" col-3 text-center ">
           <div class="d-block h-100 mb-4"></a>
-            <img class="img-fluid"  src="./img/icono3@2x.png" width="60%" alt="">
+            <img class="img-fluid" src="./img/icono3@2x.png" width="60%" alt="">
           </div>
         </div>
         <div class=" col-3 text-center">
           <div class="d-block h-100 mb-4"></a>
-            <img class="img-fluid"  src="./img/icono4@2x.png"  width="60%" alt="">
+            <img class="img-fluid" src="./img/icono4@2x.png" width="60%" alt="">
           </div>
         </div>
       </div>
@@ -274,7 +272,46 @@
     </div>
     <!--seccion eventos-->
 
+    <!--seccion testimonios-->
 
+    <section id="testimonios">
+      <div class="container-fluid text-center bg-transparent mt-5">
+        <div class="row">
+          <div class="col-sm-12 m-auto">
+            <div id="carouselTestimonios" class="carousel slide " data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row py-5">
+                    <div class="col-sm-12 col-md-4">
+                      <img class="img-fluid img-thumbnail rounded-circle" src="img/testimonio1@2x.png" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-7 mt-3">
+                      <p><i class="fas fa-quote-left text-dark" style="font-size: 30px"></i> Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. In delectus minima quas reprehenderit error, voluptates sapiente
+                        assumenda odio eos, fuga, quidem atque animi? Quam laudantium ipsum dolores vel asperiores
+                        itaque rerum adipisci officiis, doloribus, earum magni voluptatum, dolorem esse sint. <i
+                          class="fas fa-quote-right text-dark" style="font-size: 30px"></i></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <i class="fas fa-arrow-left text-dark" style="font-size: 60px"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <i class="fas fa-arrow-right text-dark" style="font-size: 60px"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--seccion testimonios-->
 
 
     <!--Footer-->
