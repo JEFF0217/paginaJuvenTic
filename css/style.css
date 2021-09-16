@@ -6,7 +6,7 @@ body{
 }
 
 .logo-nav{
-  width: 80px;
+  width: 120px;
 }
 
 #carousel-item1::before,#carousel-item2::before,#carousel-item3::before{
@@ -18,7 +18,7 @@ body{
   bottom: 0;
   right: 0;
   background:#000;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 
@@ -67,4 +67,35 @@ body{
 #empleados img, #testimonios img{
   width: 150px;
   height: 150px
+}
+
+#contacto h1{
+  font-family:'Trebuchet MS';
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#contacto p{
+  text-align: justify;
+  font-size: .9em;
+}
+
+form input:invalid:required {
+  border: 2px solid #ee9090;
+}
+
+form input:valid {
+  border: 2px solid rgb(55, 214, 95);
+}
+
+.orange-button{
+  background-color: #e78750;
+  border: none;
+}
+
+
+a:hover {
+  font-size:20px;
+  color:#100;
+
 }

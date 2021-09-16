@@ -30,13 +30,11 @@
 
 <body>
 
-  <!--Representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, 
-      así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes.-->
-  <header>
+
     <!--Barra de navegación-->
     <nav id="main" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <!--El Div sirve para crear secciones o agrupar contenidos. -->
-      <div class="container-fluid">
+
+      <div class="container">
         <!--El a href representa un hipervínculo-->
         <a class="navbar-brand" href="index.html">
           <img src="img/logo@2x.png" alt="" class="img-fluid logo-nav">
@@ -49,9 +47,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <!--El ul crea una lista no ordenada-->
-          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <ul class="navbar-nav ms-auto">
             <!--El li especifica los ítems de la lista como una secuencia ordenada.-->
-
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
@@ -68,7 +68,7 @@
         </div>
       </div>
     </nav>
-  </header>
+
 
   <!-- Representa el contenido principal del <body> de un documento o aplicación. -->
   <main>
@@ -119,7 +119,7 @@
 
     <!--seccion propuesta-->
 
-    <div class="contenedor ">
+    <div id="propuesta" class="contenedor ">
       <img src="./img/foto2@2x.png" class="img-fluid" alt="...">
       <div class="titulo-centrado">
         <p>Nuestra propuesta</p>
@@ -136,7 +136,7 @@
 
     <!--seccion galeria-->
 
-    <div class="container">
+    <div id="recomendados" class="container">
       <div class="row">
 
         <div class="col-md-6">
@@ -188,11 +188,12 @@
         </div>
       </div>
     </div>
+    
     <!-- galeria -->
 
     <!--seccion eventos-->
 
-    <div class="container-fluid pd-0" style="background-image: url(./img/foto3@2x.png); background-repeat: no-repeat;
+    <div id="eventos" class="container-fluid pd-0" style="background-image: url(./img/foto3@2x.png); background-repeat: no-repeat;
     background-size: 100%;">
       <h1 class="fw-light text-center text-lg-center mt-4 mb-0" style="color: white;">Organizamos tus eventos</h1>
       <br>
@@ -330,7 +331,7 @@
             <div class="col-md-4  mx-auto mb-md-0 mb-4">
               <div class="row align-items-center">
                 <div class="col-md-4  mx-auto mb-md-0 mb-4">
-                  <a href="" class="me-4 text-reset" style="font-size: 0.8em">
+                  <a href="mapa_del_sitio.html" class="me-4 text-reset" style="font-size: 0.8em">
                     MAPA DEL SITIO
                   </a>
                 </div>
