@@ -34,33 +34,33 @@
     <div class="container">
       <!--El a href representa un hipervínculo-->
       <a class="navbar-brand" href="index.html">
-        <img src="img/logo@2x.png" alt="" class="img-fluid logo-nav">
+          <img src="img/logo@2x.png" alt="" class="img-fluid logo-nav">
       </a>
       <!--El Button  es el elemento crea botones marcadores-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <!--El Span sirve para aplicar estilo al texto o agrupar elementos en línea-->
-        <span class="navbar-toggler-icon"></span>
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <!--El Span sirve para aplicar estilo al texto o agrupar elementos en línea-->
+          <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <!--El ul crea una lista no ordenada-->
+      <!--El ul crea una lista no ordenada-->
         <ul class="navbar-nav ms-auto">
           <!--El li especifica los ítems de la lista como una secuencia ordenada.-->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link px-3 d-md-none d-lg-block" href="index.html">INICIO</a>
+          </li>                        
+          <li class="nav-item px-3">
+              <a class="nav-link" href="nosotros.html">NOSOTROS</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          <li class="nav-item px-3">
+              <a class="nav-link" href="menu.html">MENU</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
+          <li class="nav-item px-3">
+              <a class="nav-link" href="servicios.html">SERVICIOS</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactanos.html">Contáctanos</a>
+          <li class="nav-item px-3"></li>
+              <a class="nav-link active" aria-current="page" href="contactanos.html">CONTACTANOS</a>
           </li>
         </ul>
       </div>
@@ -95,10 +95,13 @@
         <div class="col">
           <form class="row g-3 needs-validation">
             <select class="form-select form-select-sm mb-2" required>
-              <option selected disabled>Open this select menu</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option selected disabled>Seleccione el servicio</option>
+              <option value="1">Cumpleaños</option>
+              <option value="2">Aniversarios</option>
+              <option value="3">Fiestas Infantiles</option>
+              <option value="4">Declaraciones o Propuestas</option>
+              <option value="5">Despedidas</option>
+              <option value="6">Cena con Amigos</option>
             </select>
 
             <input class="form-control mb-3" type="text" placeholder="Asunto" required>

@@ -9,6 +9,10 @@ body{
   width: 120px;
 }
 
+#redesSociales i{
+  font-size: 20px
+}
+
 #carousel-item1::before,#carousel-item2::before,#carousel-item3::before{
   content:"";
   display: block;
@@ -19,6 +23,7 @@ body{
   right: 0;
   background:#000;
   opacity: 0.5;
+
 }
 
 
@@ -98,4 +103,8 @@ a:hover {
   font-size:20px;
   color:#100;
 
+}
+
+#menu img{
+  height: 250px;
 }

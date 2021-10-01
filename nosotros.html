@@ -18,8 +18,12 @@
         <!-- Iconos de Font Awesome (versión gratuita)-->
         <script src="https://kit.fontawesome.com/d652e7f0a5.js" crossorigin="anonymous"></script>
 
+        <!-- Iconos favicon-->
+        <link rel="shortcut icon" href="img/logo@2x.png">
+        <link rel="icon" href="img/logo@2x.png">
+
         <!--Titulo de la Página en la Pestaña de Google-->
-        <title>Nosotros</title>
+        <title>NOSOTROS</title>
     </head>
 
     <body>
@@ -41,24 +45,39 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                 <!--El ul crea una lista no ordenada-->
                     <ul class="navbar-nav ms-auto">
-                        <!--El li especifica los ítems de la lista como una secuencia ordenada.-->                        
-                        <li class="nav-item px-4">
-                            <a class="nav-link active" href="nosotros.html">NOSOTROS</a>
+                        <!--El li especifica los ítems de la lista como una secuencia ordenada.-->
+                        <li class="nav-item px-3 d-md-none d-lg-block">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>                        
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="nosotros.html">NOSOTROS</a>
                         </li>
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="#">MENU</a>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="menu.html">MENU</a>
                         </li>
-                        <li class="nav-item px-4">
-                            <a class="nav-link" href="#">SERVICIOS</a>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="servicios.html">SERVICIOS</a>
                         </li>
-                        <li class="nav-item px-4"></li>
-                            <a class="nav-link" href="#">CONTACTANOS</a>
+                        <li class="nav-item px-3"></li>
+                            <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+
+        <!--Iconos de Redes Sociales -->
+        <div class="container-fluid mt-5 d-flex justify-content-end position-fixed" id="redesSociales">
+            <div class="btn-group-vertical" style="width: 55px;" >
+                <a class="btn btn-warning p-3" href="https://www.facebook.com" target="_blank" role="button" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover" data-bs-content="Facebook"><i class="fab fa-facebook"></i></a>
+                <a class="btn btn-warning p-3" href="https://www.instagram.com" target="_blank" role="button" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover" data-bs-content="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-warning p-3" href="https://www.twitter.com" target="_blank" role="button" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover" data-bs-content="Twiter"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-warning p-3" href="https://www.youtube.com" target="_blank" role="button" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover" data-bs-content="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
         
+        <!--Seccion historia-->
         <section id="historia">
             <div class="container">
                 <div class="row">
@@ -80,7 +99,8 @@
                 </div>
             </div>
         </section>
-
+        
+        <!--Seccion empleados-->
         <section id="empleados" class="bg-light text-center">
             <div class="container py-5 ">
                 <div class="row">
@@ -124,15 +144,16 @@
             </div>
         </section>
 
+        <!--Seccion testimonios-->
         <section id="testimonios">
             <div class="container-fluid text-center bg-transparent mt-5">
                 <h1 class="mt-5">Testimonios</h1>
                 <div class="row">
                     <div class="col-sm-12 m-auto">
-                        <div id="carouselTestimonios" class="carousel slide " data-bs-ride="carousel">
-                            <div class="carousel-inner" >
-                                <div class="carousel-item active" >
-                                    <div class="row py-5" >
+                        <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row py-5">
                                         <div class="col-sm-12 col-md-4">
                                             <img class="img-fluid img-thumbnail rounded-circle" src="img/testimonio1@2x.png" alt="">
                                         </div>
@@ -158,86 +179,56 @@
         </section>
 
         <!--Footer-->
-        <footer class="text-center text-lg-start bg-dark text-muted">
-            <section class="">
-                <div class="container text-center text-md-start">
-                    <div class="row align-items-center">
-                        <div class="col-md-4  mx-auto mb-md-0 mb-4">
-                        <img src="./img/logo@2x.png"
-                            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="200"
-                            height="200" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+        <footer>
+            <section id="footer" class="bg-dark">
+                <div class="container py-5">
+                    <div class="row text-white">
+                        <div class="col-sm-12 col-md-3 mt-5 text-center">
+                            <img class="img-fluid" src="img/logo@2x.png" alt="" style="height: 230px; width: 350px;">
                         </div>
-                        <div class="col-md-4  mx-auto mb-md-0 mb-4">
-                        <div class="row align-items-center">
-                            <div class="col-md-4  mx-auto mb-md-0 mb-4">
-                            <a href="" class="me-4 text-reset" style="font-size: 0.8em">
-                                MAPA DEL SITIO
-                            </a>
-                            </div>
-                            <div class="col-md-4  mx-auto mb-md-0 mb-4">
-                            <a href="" class="me-4 text-reset" style="font-size: 0.8em">
-                                CONTÁCTANOS
-                            </a>
-                            </div>
-                            <div class="col-md-4  mx-auto mb-md-0 mb-4">
-                            <a href="" class="me-4 text-reset" style="font-size: 0.8em">
-                                RESERVAS
-                            </a>
-                            </div>
-
+                        <div class="col-sm-12 col-md-6 mt-5">
+                            <ul>
+                                <li class="d-inline">
+                                    <a href="mapa_del_sitio.html" class="text-reset text-decoration-none"><strong>MAPA DE SITIO</strong></a>
+                                </li>
+                                <li class="d-inline mx-4">
+                                    <a href="contactanos.html" class="text-reset text-decoration-none"><strong>CONTACTENOS</strong></a>
+                                </li>
+                                <li class="d-inline">
+                                    <a href="contactanos.html" class="text-reset text-decoration-none"><strong>RESERVAS</strong></a>
+                                </li>
+                            </ul>
+                            <p>
+                                Restaurante Sal y Salsa Ltda.<br>
+                                Calle 19 #7-30, Bogotá<br>
+                                Calle 19 #7-30, Bogotá<br>
+                                reservas@salysalsa.com<br>
+                                31232525321
+                            </p>
+                            <cite> © 2021 Copyright: Colnodo JuvenTic</cite>
                         </div>
-                        <div class="row align-items-center " style="text-align: center;">
-
-                            <p>Restaurante Sal y Salsa Ltda.<br>
-                            Calle 19 #7-30, Bogotá<br>
-                            Calle 19 #7-30, Bogotá<br>
-                            reservas@salysalsa.com<br>
-                            31232525321</p>
-                        </div>
-                        </div>
-                        <div class="col-md-4 ">
-
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.397892523755!2d-74.07284316474787!3d4.605767782672307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a1f30307cf%3A0xf863232d4608bc5b!2zQ2wuIDE5ICM3LTMwLCBCb2dvdMOh!5e0!3m2!1ses!2sco!4v1631414099705!5m2!1ses!2sco"
-                            frameborder="" style="border:0"></iframe>
+                        <div class="col-sm-12 col-md-3 text-center mt-5">                            
+                            <iframe width="320" height="230" frameborder="1" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?&amp;hl=es&amp;q=bogota+&amp;z=14&amp;output=embed"></iframe>                            
                         </div>
                     </div>
-
-
                 </div>
             </section>
-
-
-
-        <div class="container p-4">
-            <div class="row align-items-center">
-            <div class="col-md-4  mx-auto mb-md-0 mb-4"> © 2021 Copyright: Colnodo JuvenTic</div>
-            <div class="col-md-4  mx-auto mb-md-0 mb-4">
-                <!-- Section: Links  -->
-                <a href="" class="me-4 text-reset">
-                <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-            </div>
-        </div>
-
         </footer>
     
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-
-
+        crossorigin="anonymous">
+    </script>
+    
     </body>
+    
+    <!-- Inicializador de popover -->
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
 </html>

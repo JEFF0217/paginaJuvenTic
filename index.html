@@ -9,10 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--Indica un color sugerido que los agentes de usuario deben usar para personalizar la
        visualización de la página-->
-  <meta name="theme-color" content="#7952b3">
-
-  <!--Titulo de la Página en la Pestaña de Google-->
-  <title>Inicio</title>
+  <meta name="theme-color" content="#7952b3">  
 
   <!-- Hojas de Estilo en Bootstrap core CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,49 +21,52 @@
 
   <!-- Iconos de Font Awesome (versión gratuita)-->
   <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- Iconos favicon-->
+  <link rel="shortcut icon" href="img/logo@2x.png">
+  <link rel="icon" href="img/logo@2x.png">
+
+  <!--Titulo de la Página en la Pestaña de Google-->
+  <title>SAL&SALSA</title>
 </head>
 
 
 
 <body>
+  <!--Barra de navegación-->
+  <nav id="main" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <!--El Div sirve para crear secciones o agrupar cont enidos. -->
+        <div class="container">
+            <!--El a href representa un hipervínculo-->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo@2x.png" alt="" class="img-fluid logo-nav">
+            </a>
+            <!--El Button  es el elemento crea botones marcadores-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <!--El Span sirve para aplicar estilo al texto o agrupar elementos en línea-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-
-    <!--Barra de navegación-->
-    <nav id="main" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-
-      <div class="container">
-        <!--El a href representa un hipervínculo-->
-        <a class="navbar-brand" href="index.html">
-          <img src="img/logo@2x.png" alt="" class="img-fluid logo-nav">
-        </a>
-        <!--El Button  es el elemento crea botones marcadores-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <!--El Span sirve para aplicar estilo al texto o agrupar elementos en línea-->
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <!--El ul crea una lista no ordenada-->
-          <ul class="navbar-nav ms-auto">
-            <!--El li especifica los ítems de la lista como una secuencia ordenada.-->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactanos.html">Contáctanos</a>
-            </li>
-          </ul>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!--El ul crea una lista no ordenada-->
+                <ul class="navbar-nav ms-auto">
+                    <!--El li especifica los ítems de la lista como una secuencia ordenada.-->                                          
+                    <li class="nav-item px-3">
+                        <a class="nav-link" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item px-3"></li>
+                        <a class="nav-link nav" href="contactanos.html">CONTACTANOS</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
 
@@ -180,7 +180,7 @@
           </div>
           <div class="row">
             <div class="text-center">
-              <a type="button" class="btn btn-dark" href="menu.html">Consultar el menu</a>
+              <a type="button" class="btn btn-warning" href="menu.html">Consultar el menu</a>
             </div>
 
           </div>
