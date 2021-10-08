@@ -3,6 +3,18 @@ const templateCard = document.getElementById('template-card').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
+
+
+const showMessage = () => {
+    const alert = document.getElementById('alert');
+    alert.className = 'alert alert-success';
+    alert.innerText = 'Producto agregado al carrito';
+    setTimeout(function () {
+        document.querySelector('.alert').remove();
+    }, 3000);
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
     
     fetchData()
@@ -14,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 cards.addEventListener('click', e => {
     addCarrito(e)
+    showMessage()
 })
 
 window.addEventListener('storage', () => {
@@ -44,14 +57,16 @@ const pintarCards = data => {
         fragment.appendChild(clon)
     });
     cards.appendChild(fragment)
+
 }
 
 const addCarrito = e => {
 
-    if (e.target.classList.contains('btn-dark')) {
+    if (e.target.classList.contains('btn-dark')) {        
         setCarrito(e.target.parentElement)
+        
     }
-    e.stopPropagation()
+    e.stopPropagation()   
 
 }
 
@@ -69,6 +84,8 @@ const setCarrito = objeto => {
     carrito[producto.id] = { ...producto }
 
     localStorage.setItem("carrito", JSON.stringify(carrito))
+
+    
 
 
 
